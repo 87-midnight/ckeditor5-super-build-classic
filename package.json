@@ -1,5 +1,5 @@
 {
-  "name": "ckeditor5-super-build-classic",
+  "name": "87midnight-ckeditor5-vue3",
   "version": "1.0.0",
   "description": "ckeditor5 super build for vue3,using typescript.",
   "main": "ckeditor.js",
@@ -13,9 +13,9 @@
   "keywords": [
     "ckeditor5",
     "vue3",
-    "rich",
-    "text",
-    "editor."
+    "rich text editor",
+    "ckeditor5 super build",
+    "npm."
   ],
   "author": "anniecattice",
   "license": "ISC",
