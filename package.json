@@ -1,0 +1,26 @@
+{
+  "name": "ckeditor5-super-build-classic",
+  "version": "1.0.0",
+  "description": "ckeditor5 super build for vue3,using typescript.",
+  "main": "ckeditor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/87-midnight/ckeditor5-super-build-classic.git"
+  },
+  "keywords": [
+    "ckeditor5",
+    "vue3",
+    "rich",
+    "text",
+    "editor."
+  ],
+  "author": "anniecattice",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/87-midnight/ckeditor5-super-build-classic/issues"
+  },
+  "homepage": "https://github.com/87-midnight/ckeditor5-super-build-classic#readme"
+}
