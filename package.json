@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ckeditor5 super build for vue3,using typescript.",
   "main": "ckeditor.js",
+  "types": "ckeditor.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
