@@ -18,8 +18,6 @@ import {
 	Underline
 } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
-import { CKBox } from '@ckeditor/ckeditor5-ckbox';
-import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
@@ -42,14 +40,12 @@ import {
 	ImageResize,
 	ImageStyle,
 	ImageToolbar,
-	ImageUpload,
-	PictureEditing
+	ImageUpload
 } from '@ckeditor/ckeditor5-image';
 import { Indent, IndentBlock } from '@ckeditor/ckeditor5-indent';
 import { TextPartLanguage } from '@ckeditor/ckeditor5-language';
 import { AutoLink, Link, LinkImage } from '@ckeditor/ckeditor5-link';
 import { List, ListProperties, TodoList } from '@ckeditor/ckeditor5-list';
-import { Markdown } from '@ckeditor/ckeditor5-markdown-gfm';
 import { MediaEmbed, MediaEmbedToolbar } from '@ckeditor/ckeditor5-media-embed';
 import { Mention } from '@ckeditor/ckeditor5-mention';
 import { PageBreak } from '@ckeditor/ckeditor5-page-break';
@@ -94,8 +90,6 @@ class Editor extends ClassicEditor {
 		Autosave,
 		BlockQuote,
 		Bold,
-		CKBox,
-		CloudServices,
 		Code,
 		CodeBlock,
 		DataFilter,
@@ -126,14 +120,12 @@ class Editor extends ClassicEditor {
 		LinkImage,
 		List,
 		ListProperties,
-		Markdown,
 		MediaEmbed,
 		MediaEmbedToolbar,
 		Mention,
 		PageBreak,
 		Paragraph,
 		PasteFromOffice,
-		PictureEditing,
 		RemoveFormat,
 		SelectAll,
 		ShowBlocks,
@@ -171,6 +163,7 @@ class Editor extends ClassicEditor {
 				'|',
 				'bold',
 				'italic',
+				'underline',
 				'link',
 				'bulletedList',
 				'numberedList',
@@ -184,32 +177,35 @@ class Editor extends ClassicEditor {
 				'mediaEmbed',
 				'undo',
 				'redo',
-				'ckbox',
-				'style',
-				'strikethrough',
-				'superscript',
-				'subscript',
-				'textPartLanguage',
-				'todoList',
-				'underline',
 				'alignment',
-				'code',
 				'codeBlock',
-				'findAndReplace',
+				'code',
+				'|',
 				'fontBackgroundColor',
 				'fontColor',
 				'fontFamily',
 				'fontSize',
-				'highlight',
-				'horizontalLine',
+				'|',
 				'htmlEmbed',
-				'pageBreak',
+				'horizontalLine',
+				'highlight',
 				'imageInsert',
+				'|',
+				'pageBreak',
 				'selectAll',
 				'showBlocks',
 				'sourceEditing',
 				'specialCharacters',
 				'restrictedEditingException',
+				'strikethrough',
+				'|',
+				'style',
+				'superscript',
+				'subscript',
+				'textPartLanguage',
+				'|',
+				'todoList',
+				'findAndReplace',
 				'removeFormat'
 			]
 		},

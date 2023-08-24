@@ -16,14 +16,10 @@ watchdog.setDestructor( editor => {
 
 watchdog.on( 'error', handleSampleError );
 
-createDialog().then( config => watchdog.create(
-	document.querySelector( '.editor' ), {
-		licenseKey: config.licenseKey,
-		ckbox: {
-			tokenUrl: config.ckboxTokenUrl
-		}
-	}
-) )
+watchdog
+	.create( document.querySelector( '.editor' ), {
+		// Editor configuration.
+	} )
 	.catch( handleSampleError );
 
 function handleSampleError( error ) {
@@ -31,7 +27,7 @@ function handleSampleError( error ) {
 
 	const message = [
 		'Oops, something went wrong!',
-		`Please, report the following error on ${ issueUrl } with the build id "5o8syp70p3kd-l14789g63eli" and the error stack trace:`
+		`Please, report the following error on ${ issueUrl } with the build id "v9kibgpjq8b7-ldn81dvhggur" and the error stack trace:`
 	].join( '\n' );
 
 	console.error( message );
