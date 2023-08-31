@@ -232,4 +232,4 @@ class Editor extends ClassicEditor {
 	};
 }
 
-export default { Editor, EditorWatchdog };
+export { Editor, EditorWatchdog };

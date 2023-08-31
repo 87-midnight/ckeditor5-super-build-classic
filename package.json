@@ -1,8 +1,9 @@
 {
-  "name": "87midnight-ckeditor5-vue3",
+  "name": "87-midnight-ckeditor5",
   "author": "linchuangang",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "keywords": ["vue3","react","ckeditor5"],
   "license": "SEE LICENSE IN LICENSE.md",
   "main": "./build/ckeditor.js",
   "types": "./build/ckeditor.d.ts",

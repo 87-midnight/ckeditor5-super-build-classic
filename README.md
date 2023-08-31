@@ -42,6 +42,35 @@ npm run build
 
 This will build the CKEditor 5 to the `build` directory. You can open your browser and you should be able to see the changes you've made in the code. If not, then try to refresh also the browser cache by typing `Ctrl + R` or `Cmd + R` depending on your system.
 
+### usage
+
+```typescript
+import {Editor,EditorWatchdog} from '87-midnight-ckeditor5'
+
+const App = ()=>{
+    return 
+    (
+        <CKEditor
+                    editor={ Editor }
+                    data="<p>Hello from CKEditor&nbsp;5!</p>"
+                    onReady={ (editor:Editor) => {
+                        console.log( 'Editor is ready to use!', editor );
+                    } }
+                    onChange={ ( event:any, editor:Editor ) => {
+                        const data = editor.getData();
+                        console.log( { event, editor, data } );
+                    } }
+                    onBlur={ ( event:any, editor:Editor ) => {
+                        console.log( 'Blur.', editor,event );
+                    } }
+                    onFocus={ ( event:any, editor:Editor ) => {
+                        console.log( 'Focus.', editor ,event);
+                    } }
+                />
+    )
+}
+```
+
 ## What's next?
 
 Follow the guides available on https://ckeditor.com/docs/ckeditor5/latest/framework/index.html and enjoy the document editing.
