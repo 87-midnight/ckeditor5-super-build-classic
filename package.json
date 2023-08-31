@@ -1,19 +1,20 @@
 {
   "name": "87-midnight-ckeditor5",
-  "author": "linchuangang",
+  "author": "anniecattice",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
-  "version": "0.0.3",
-  "keywords": ["vue3","react","ckeditor5"],
+  "version": "0.0.4",
   "license": "SEE LICENSE IN LICENSE.md",
+  "repository": "https://github.com/87-midnight/ckeditor5-super-build-classic",
+  "keywords": ["vue3","react","ckeditor5"],
   "main": "./build/ckeditor.js",
   "types": "./build/ckeditor.d.ts",
-  "repository": "https://github.com/87-midnight/ckeditor5-super-build-classic",
   "dependencies": {
     "@ckeditor/ckeditor5-alignment": "39.0.1",
     "@ckeditor/ckeditor5-autoformat": "39.0.1",
     "@ckeditor/ckeditor5-autosave": "39.0.1",
     "@ckeditor/ckeditor5-basic-styles": "39.0.1",
     "@ckeditor/ckeditor5-block-quote": "39.0.1",
+    "@ckeditor/ckeditor5-cloud-services": "39.0.1",
     "@ckeditor/ckeditor5-code-block": "39.0.1",
     "@ckeditor/ckeditor5-editor-classic": "39.0.1",
     "@ckeditor/ckeditor5-essentials": "39.0.1",
@@ -43,7 +44,6 @@
     "@ckeditor/ckeditor5-style": "39.0.1",
     "@ckeditor/ckeditor5-table": "39.0.1",
     "@ckeditor/ckeditor5-typing": "39.0.1",
-    "@ckeditor/ckeditor5-watchdog": "39.0.1",
     "@ckeditor/ckeditor5-word-count": "39.0.1"
   },
   "devDependencies": {

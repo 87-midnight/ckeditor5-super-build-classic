@@ -18,6 +18,7 @@ import {
 	Underline
 } from '@ckeditor/ckeditor5-basic-styles';
 import { BlockQuote } from '@ckeditor/ckeditor5-block-quote';
+import { CloudServices } from '@ckeditor/ckeditor5-cloud-services';
 import { CodeBlock } from '@ckeditor/ckeditor5-code-block';
 import { Essentials } from '@ckeditor/ckeditor5-essentials';
 import { FindAndReplace } from '@ckeditor/ckeditor5-find-and-replace';
@@ -75,7 +76,6 @@ import {
 	TableToolbar
 } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
-import { EditorWatchdog } from '@ckeditor/ckeditor5-watchdog';
 import { WordCount } from '@ckeditor/ckeditor5-word-count';
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
@@ -90,6 +90,7 @@ class Editor extends ClassicEditor {
 		Autosave,
 		BlockQuote,
 		Bold,
+		CloudServices,
 		Code,
 		CodeBlock,
 		DataFilter,
@@ -159,52 +160,51 @@ class Editor extends ClassicEditor {
 	public static override defaultConfig = {
 		toolbar: {
 			items: [
+				'undo',
+				'redo',
 				'heading',
 				'|',
 				'bold',
 				'italic',
-				'underline',
 				'link',
 				'bulletedList',
 				'numberedList',
+				'todoList',
 				'|',
 				'outdent',
 				'indent',
+				'alignment',
 				'|',
 				'imageUpload',
+				'imageInsert',
 				'blockQuote',
 				'insertTable',
 				'mediaEmbed',
-				'undo',
-				'redo',
-				'alignment',
-				'codeBlock',
-				'code',
 				'|',
 				'fontBackgroundColor',
 				'fontColor',
 				'fontFamily',
 				'fontSize',
-				'|',
-				'htmlEmbed',
 				'horizontalLine',
 				'highlight',
-				'imageInsert',
+				'underline',
+				'strikethrough',
 				'|',
+				'codeBlock',
+				'code',
+				'superscript',
+				'subscript',
+				'htmlEmbed',
+				'|',
+				'textPartLanguage',
+				'style',
+				'restrictedEditingException',
 				'pageBreak',
+				'|',
 				'selectAll',
 				'showBlocks',
 				'sourceEditing',
 				'specialCharacters',
-				'restrictedEditingException',
-				'strikethrough',
-				'|',
-				'style',
-				'superscript',
-				'subscript',
-				'textPartLanguage',
-				'|',
-				'todoList',
 				'findAndReplace',
 				'removeFormat'
 			]
@@ -232,4 +232,4 @@ class Editor extends ClassicEditor {
 	};
 }
 
-export { Editor, EditorWatchdog };
+export default Editor;

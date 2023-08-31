@@ -42,10 +42,14 @@ npm run build
 
 This will build the CKEditor 5 to the `build` directory. You can open your browser and you should be able to see the changes you've made in the code. If not, then try to refresh also the browser cache by typing `Ctrl + R` or `Cmd + R` depending on your system.
 
-### usage
+## What's next?
+
+Follow the guides available on https://ckeditor.com/docs/ckeditor5/latest/framework/index.html and enjoy the document editing.
+
+## usage
 
 ```typescript
-import {Editor,EditorWatchdog} from '87-midnight-ckeditor5'
+import Editor from '87-midnight-ckeditor5'
 
 const App = ()=>{
     return 
@@ -71,14 +75,10 @@ const App = ()=>{
 }
 ```
 
-## What's next?
-
-Follow the guides available on https://ckeditor.com/docs/ckeditor5/latest/framework/index.html and enjoy the document editing.
-
 ## FAQ
 | Where is the place to report bugs and feature requests?
 
-You can create an issue on https://github.com/ckeditor/ckeditor5/issues including the build id - `v9kibgpjq8b7-ldn81dvhggur`. Make sure that the question / problem is unique, please look for a possibly asked questions in the search box. Duplicates will be closed.
+You can create an issue on https://github.com/ckeditor/ckeditor5/issues including the build id - `udd234h0crk2-15fqjz4t6i9l`. Make sure that the question / problem is unique, please look for a possibly asked questions in the search box. Duplicates will be closed.
 
 | Where can I learn more about the CKEditor 5 framework?
 
