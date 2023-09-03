@@ -3,9 +3,13 @@
   "author": "anniecattice",
   "description": "A custom CKEditor 5 build made by the CKEditor 5 online builder.",
   "version": "0.0.4",
-  "license": "SEE LICENSE IN LICENSE.md",
+  "license": "LICENSE.md",
   "repository": "https://github.com/87-midnight/ckeditor5-super-build-classic",
-  "keywords": ["vue3","react","ckeditor5"],
+  "keywords": [
+    "vue3",
+    "react",
+    "ckeditor5"
+  ],
   "main": "./build/ckeditor.js",
   "types": "./build/ckeditor.d.ts",
   "dependencies": {
@@ -50,6 +54,7 @@
     "@ckeditor/ckeditor5-dev-translations": "^32.1.2",
     "@ckeditor/ckeditor5-dev-utils": "^32.1.2",
     "@ckeditor/ckeditor5-theme-lark": "^39.0.1",
+    "@isaul32/ckeditor5-math": "^39.0.1",
     "css-loader": "^5.2.7",
     "postcss": "^8.4.27",
     "postcss-loader": "^4.3.0",

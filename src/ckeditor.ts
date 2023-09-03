@@ -77,6 +77,10 @@ import {
 } from '@ckeditor/ckeditor5-table';
 import { TextTransformation } from '@ckeditor/ckeditor5-typing';
 import { WordCount } from '@ckeditor/ckeditor5-word-count';
+//@ts-ignore
+import Math from '@isaul32/ckeditor5-math/src/math';
+//@ts-ignore
+import AutoformatMath from '@isaul32/ckeditor5-math/src/autoformatmath';
 
 // You can read more about extending the build with additional plugins in the "Installing plugins" guide.
 // See https://ckeditor.com/docs/ckeditor5/latest/installation/plugins/installing-plugins.html for details.
@@ -154,7 +158,9 @@ class Editor extends ClassicEditor {
 		Title,
 		TodoList,
 		Underline,
-		WordCount
+		WordCount,
+		Math,
+		AutoformatMath
 	];
 
 	public static override defaultConfig = {
@@ -195,6 +201,7 @@ class Editor extends ClassicEditor {
 				'superscript',
 				'subscript',
 				'htmlEmbed',
+				'math',
 				'|',
 				'textPartLanguage',
 				'style',
