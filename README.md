@@ -75,6 +75,33 @@ const App = ()=>{
 }
 ```
 
+## changelog
+
+### v0.0.4
+
+install math plugin by using @isaul32/ckeditor5-math
+
+see [@isaul32/ckeditor5-math](https://github.com/isaul32/ckeditor5-math) for more details
+
+usage:
+
+```ts
+const defaultConfig = {
+	// ...
+	math: {
+		engine: 'mathjax', // or katex or function. E.g. (equation, element, display) => { ... }
+		lazyLoad: undefined, // async () => { ... }, called once before rendering first equation if engine doesn't exist. After resolving promise, plugin renders equations.
+		outputType: 'script', // or span
+		className: 'math-tex', // class name to use with span output type, change e.g. MathJax processClass (v2) / processHtmlClass (v3) is set
+		forceOutputType: false, // forces output to use outputType
+		enablePreview: true, // Enable preview view
+		previewClassName: [], // Class names to add to previews
+		popupClassName: [], // Class names to add to math popup balloon
+		katexRenderOptions: {}  // KaTeX only options for katex.render(ToString)
+	}
+}
+```
+
 ## FAQ
 | Where is the place to report bugs and feature requests?
 
