@@ -85,13 +85,25 @@ see [@isaul32/ckeditor5-math](https://github.com/isaul32/ckeditor5-math) for mor
 
 usage:
 
+```bash
+npm i katex @types/katex
+
+
+```
+
 ```ts
+import katex from 'katex'
+
+// defaultConfig use for Ckeditor config
+
 const defaultConfig = {
 	// ...
 	math: {
-		engine: 'mathjax', // or katex or function. E.g. (equation, element, display) => { ... }
+		engine: (equation, element, display) => {
+            element.innerHTML = katex.renderToString(equation,{output:'mathml'})
+        }, // or katex or function. E.g. (equation, element, display) => { ... }
 		lazyLoad: undefined, // async () => { ... }, called once before rendering first equation if engine doesn't exist. After resolving promise, plugin renders equations.
-		outputType: 'script', // or span
+		outputType: 'span', // or span
 		className: 'math-tex', // class name to use with span output type, change e.g. MathJax processClass (v2) / processHtmlClass (v3) is set
 		forceOutputType: false, // forces output to use outputType
 		enablePreview: true, // Enable preview view
